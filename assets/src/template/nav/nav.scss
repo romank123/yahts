@@ -1,6 +1,19 @@
-.container-fluid {
+.bg-nav {
   @include bg($all_good)
 }
+
 .bg-all-good {
   @include bg($all-good)
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.navbar button {
+
+  @include lg {
+    min-width: 255px;
+  }
+
 }

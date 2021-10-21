@@ -2,6 +2,12 @@
 @import "variables";
 @import "mixins";
 @import "../template/nav/nav";
+@import "../template/header/header";
+@import "../template/tabs/tabs";
+@import "../template/rating/rating";
+@import "../template/table/table";
+@import "../template/about/about";
+@import "../template/footer/footer";
 
 // Подключение нужных SCSS исходников Bootstrap 4
 //@import "../../../node_modules/bootstrap/scss/_functions";

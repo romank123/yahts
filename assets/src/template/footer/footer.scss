@@ -1,0 +1,56 @@
+.footer-title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $white;
+}
+
+footer ul li,
+.contact-title {
+  list-style: none;
+  padding: .5rem 0;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: $white;
+}
+
+footer ul li a,
+.contact-title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $white;
+}
+
+footer .title-header {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  color: $white;
+}
+
+footer .border-bottom {
+  border-bottom: 1px solid rgba(255,255,255, .4) !important;
+}
+
+.text-sm {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: $white;
+}
+
+.text-normal {
+  line-height: 1;
+}

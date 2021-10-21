@@ -1,0 +1,35 @@
+.bg_header {
+  background: url("/img/bg_image.jpg") no-repeat center top;
+  background-size: cover;
+  height: 584px;
+}
+
+.header_title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.text-year {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $all_good;
+}
+
+.text-subtitle {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: $white;
+}
+

@@ -31,3 +31,16 @@
 @mixin bg($size:$all_good){
   background:$size;
 }
+
+@mixin lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+
+//xs: 0
+//sm: 576px
+//md: 768px
+//lg: 992px
+//xl: 1200px

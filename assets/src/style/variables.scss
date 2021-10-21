@@ -1,9 +1,93 @@
 // Variables Bootstrap 4
 
 $white: #ffffff;
+$black: #000000;
 $accent: #5995AE;
 $faint: #FFFFFF;
 $base: #000000;
 $error: #FF3D12;
 $warning: #E6B60A;
 $all_good: #6FCF0F;
+
+body {
+  font-family: Rubik, sans-serif;
+}
+
+p,
+ul{
+  margin-bottom: 0;
+  padding: 0;
+}
+
+//navigation
+.mobile_button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $white;
+  border: 1px solid $white;
+  border-radius: 0;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active > .nav-link {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $white;
+}
+
+.navbar_logo {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+
+.navbar_logo:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+//end navigation
+
+.text-base {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #32484D;
+}
+
+.text-small {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #849EA4;
+}
+
+.text-card {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $black;
+}
+

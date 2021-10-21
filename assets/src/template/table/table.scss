@@ -1,0 +1,51 @@
+thead tr th {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #4D4D4D;
+}
+
+table {
+  width: 500px;
+  border-collapse: collapse;
+  border: 2px solid white;
+}
+
+th {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #4D4D4D;
+}
+
+tbody tr td:nth-of-type(3) {
+  color: $all_good;
+}
+
+table tr td {
+  text-align: left;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+table tr td + td {
+  text-align: right;
+}
+
+table tr th {
+  text-align: right;
+}
+
+table tr th:first-child {
+  text-align: left;
+}
+
+table tr th:nth-of-type(2) {
+  text-align: left;
+}

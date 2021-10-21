@@ -1,0 +1,40 @@
+/* h2 */
+h2 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.about_title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  color: $all_good;
+  border: 1px solid $all_good;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: $white;
+  background: #6FCF0F;
+  border-radius: 4px;
+}
+
+.card {
+  border: 0;
+}
+
