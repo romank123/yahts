@@ -1,0 +1,6 @@
+.container-fluid {
+  @include bg($all_good)
+}
+.bg-all-good {
+  @include bg($all-good)
+}
