@@ -10,6 +10,15 @@
   justify-content: space-evenly;
 }
 
+.dropdown-item {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #849EA4;
+}
+
 .navbar button {
 
   @include lg {
