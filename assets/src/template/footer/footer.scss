@@ -6,13 +6,20 @@
   line-height: 1;
   text-transform: uppercase;
   color: $white;
+  padding: 1rem 15px 2rem;
 }
 
-footer ul li,
-.contact-title {
+footer ul li {
   list-style: none;
   padding: .5rem 0;
 }
+.contact-title {
+  list-style: none;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+
 
 footer ul li a:hover {
   text-decoration: none;
@@ -61,7 +68,20 @@ footer .border-bottom {
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
-  line-height: 23px;
-
   color: #FFFFFF;
+  padding: .5rem 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-link:hover {
+  text-decoration-color: white;
+  color: white;
+}
+
+.main-footer .bg-nav {
+
 }

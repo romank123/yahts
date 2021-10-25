@@ -19,10 +19,11 @@
   font-style: normal;
   font-weight: bold;
   font-size: 120px;
-  line-height: 100%;
+  line-height: .85;
   text-transform: uppercase;
   color: $all_good;
   cursor: pointer;
+  border-bottom: 3px dashed #6FCF0F;
 }
 
 .text-subtitle {
@@ -44,12 +45,13 @@
 .sub_menu {
   position: absolute;
   top: 0;
+  left: 0;
   background: $white;
   border: 1px solid #CBCBCB;
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
   z-index: 1;
-  width: 280px;
+  width: 100%;
 }
 
 .sub_menu ul li {
@@ -72,6 +74,25 @@
 .sub_menu ul li a:hover {
   color: #32484D;
   background: #F4F8F9;
+}
+
+.sub_menu .active-menu {
+  color: #32484D;
+  background: #F4F8F9;
+}
+
+.content-wrapper {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.wrapper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 500px;
 }
 
 

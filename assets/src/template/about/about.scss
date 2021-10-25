@@ -17,6 +17,10 @@ h2 {
   color: #000000;
 }
 
+.tab-content{
+  margin-top: 2rem;
+}
+
 .nav-tabs {
   border-bottom: 0;
 }
@@ -26,15 +30,36 @@ h2 {
   border: 1px solid $all_good;
   border-radius: 4px;
   text-transform: uppercase;
+  transition: .3s;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: $white;
   background: #6FCF0F;
   border-radius: 4px;
+  transition: .3s;
+}
+
+.nav-tabs a.nav-link:hover {
+  border: 1px solid #59A60C;
+  color: #59A60C;
+}
+
+.nav-tabs a.nav-link.active:hover {
+  color: $white;
+  background: #59A60C;
 }
 
 .card {
   border: 0;
+}
+
+.bg-grey-about {
+  padding: 2rem 0;
+  background: #F7F7F7;
+}
+
+.container-fluid.bg-grey-about {
+  padding-top: 4rem;
 }
 

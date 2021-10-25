@@ -2,7 +2,7 @@ console.log('header.js ..')
 
 $("#menu_date").hover(function () {
 
-    $("#sub_menu").slideDown(100);
+        $("#sub_menu").slideDown(100);
 
         $("#sub_menu").hover(function () {
 
@@ -12,25 +12,25 @@ $("#menu_date").hover(function () {
 
                 let isHovered1 = $('#menu_date').is(":hover")
 
-                if (isHovered1  == false ) {
+                if (isHovered1 == false) {
 
-                    $("#sub_menu").hide()
+                    $("#sub_menu").slideUp(100);
 
-                };
+                }
+                ;
 
             });
 
-},
+    },
     function () {
 
         let isHovered = $('#sub_menu').is(":hover")
 
-        if (isHovered  == false ) {
+        if (isHovered == false) {
 
             $("#sub_menu").slideUp(100);
 
         }
 
 
-
-});
+    });

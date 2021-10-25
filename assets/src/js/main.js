@@ -10,4 +10,8 @@
 // Импортируем другие js-файлы
 //= tab.js
 //= my.js
+//= nav.js
+//= select-toggle.js
+//= rating-input.js
 //= header.js
+//= modal.js

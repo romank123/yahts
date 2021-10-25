@@ -10,6 +10,15 @@
   justify-content: space-evenly;
 }
 
+.mobile_button {
+  transition: .3s;
+}
+
+.mobile_button:hover {
+  border: 1px solid #AFFF5F;
+  color: $white;
+}
+
 .dropdown-item {
   font-family: Rubik;
   font-style: normal;
@@ -19,8 +28,32 @@
   color: #849EA4;
 }
 
-.navbar button {
+a.dropdown-toggle {
+  position: relative;
+}
 
+.dropdown-toggle::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  top: 50%;
+  right: -15px;
+  background: url('/img/down.svg');
+  border: 0;
+  transform: translate(0, -50%) rotate(180deg);
+  transition: transform .4s;
+}
+
+.dropdown-toggle.active::after {
+  transform: translate(0, -50%) rotate(0deg);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #AFFF5F;
+}
+
+.navbar .mobile_button {
   @include lg {
     min-width: 255px;
   }
