@@ -1,4 +1,4 @@
-console.log('nav.js..')
+console.log('nav.js run..')
 $('a.nav-link.dropdown-toggle').click(function (e) {
     e.preventDefault();
     $(this).toggleClass('active');

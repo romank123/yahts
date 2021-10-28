@@ -15,3 +15,4 @@
 //= rating-input.js
 //= header.js
 //= modal.js
+//= table.js

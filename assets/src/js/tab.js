@@ -1,7 +1,7 @@
 console.log('tab.js run..')
 $(function () {
     let tab = $('.tab-pane-up > div');
-    tab.filter(':first').show();
+    tab.filter(':first').fadeIn();
 
     $('.nav.nav-tabs a').click(function () {
 
@@ -13,7 +13,7 @@ $(function () {
 
                 if (getattr == getvalue) {
 
-                    $(value).show()
+                    $(value).fadeIn(400)
 
                 } else {
 

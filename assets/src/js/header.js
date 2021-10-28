@@ -1,4 +1,4 @@
-console.log('header.js ..')
+console.log('header.js run..')
 
 $("#menu_date").hover(function () {
 

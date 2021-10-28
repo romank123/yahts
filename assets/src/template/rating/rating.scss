@@ -12,7 +12,7 @@
   transition: transform .4s;
 }
 
-.custom-select{
+.custom-select {
   background: url('/img/up.svg') no-repeat center center;
 }
 
@@ -41,25 +41,34 @@
   left: 14px;
   width: calc(100% - 28px);
 }
+
 .rating-link {
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  color: #2AA7FF;
-  border-bottom: 1px dashed #2AA7FF;
+  color: #2aa7ff;
+  border-bottom: 1px dashed #2aa7ff;
   display: block;
-  margin-top: 2rem;
+
+
+  @include sm {
+    margin-top: 2rem;
+  }
 }
 
 .rating-title {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 4px;
+
+  @include lg {
+    margin-top: 2rem;
+  }
 }
 
 a.rating-link:hover {
-  color: #2AA7FF;
+  color: #2aa7ff;
   text-decoration: none;
   border-bottom: unset;
 

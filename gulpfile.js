@@ -1,5 +1,4 @@
 'use strict';
-
 /* пути к исходным файлам (src), к готовым файлам (build), а также к тем, за изменениями которых нужно наблюдать (watch) */
 var path = {
     build: {
@@ -49,7 +48,12 @@ var gulp = require('gulp'),  // подключаем Gulp
     jpegrecompress = require('imagemin-jpeg-recompress'), // плагин для сжатия jpeg	
     pngquant = require('imagemin-pngquant'), // плагин для сжатия png
     del = require('del'), // плагин для удаления файлов и каталогов
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    removeHtmlComments = require('gulp-remove-html-comments'),
+    htmlmin = require('gulp-htmlmin'),
+    removeEmptyLines = require('gulp-remove-empty-lines'),
+    replace = require('gulp-replace'),
+    strip = require('gulp-strip-comments');
 
 /* задачи */
 
@@ -63,6 +67,8 @@ gulp.task('html:build', function () {
     return gulp.src(path.src.html) // выбор всех html файлов по указанному пути
         .pipe(plumber()) // отслеживание ошибок
         .pipe(rigger()) // импорт вложений
+        .pipe(removeHtmlComments())
+        .pipe(removeEmptyLines())
         .pipe(gulp.dest(path.build.html)) // выкладывание готовых файлов
         .pipe(webserver.reload({ stream: true })); // перезагрузка сервера
 });
@@ -76,7 +82,11 @@ gulp.task('css:build', function () {
         .pipe(autoprefixer()) // добавим префиксы
         .pipe(gulp.dest(path.build.css))
         //.pipe(rename({ suffix: '.min' }))
-        //.pipe(cleanCSS()) // минимизируем CSS
+        //.pipe(cleanCSS({
+        //    format: 'beautify',
+        //    level: {1: {cleanupCharsets: false, specialComments: 0}}})) // минимизируем CSS
+        .pipe(replace(/@charset.*?;/, ''))
+        .pipe(removeEmptyLines())
         .pipe(sourcemaps.write('./')) // записываем sourcemap
         .pipe(gulp.dest(path.build.css)) // выгружаем в build
         .pipe(webserver.reload({ stream: true })); // перезагрузим сервер
@@ -91,6 +101,8 @@ gulp.task('js:build', function () {
         //.pipe(rename({ suffix: '.min' }))
         .pipe(sourcemaps.init()) //инициализируем sourcemap
         //.pipe(uglify()) // минимизируем js
+        .pipe(strip())
+        .pipe(removeEmptyLines())
         .pipe(sourcemaps.write('./')) //  записываем sourcemap
         .pipe(gulp.dest(path.build.js)) // положим готовый файл
         .pipe(webserver.reload({ stream: true })); // перезагрузим сервер

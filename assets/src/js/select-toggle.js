@@ -1,9 +1,8 @@
-console.log('select-toggle.js')
+console.log('select-toggle.js run..')
+
 $('select.custom-select').click(function (e) {
     $(this).toggleClass('active-select');
 });
-
-$(function($){
     $(document).mouseup(function (e){ // событие клика по веб-документу
         let div = $("a.nav-link.dropdown-toggle"); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
@@ -11,5 +10,4 @@ $(function($){
             $(div).removeClass('active'); // скрываем его
         }
     });
-});
 

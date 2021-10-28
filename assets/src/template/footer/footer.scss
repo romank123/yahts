@@ -13,13 +13,12 @@ footer ul li {
   list-style: none;
   padding: .5rem 0;
 }
+
 .contact-title {
   list-style: none;
   padding-top: 0;
   padding-bottom: 1rem;
 }
-
-
 
 footer ul li a:hover {
   text-decoration: none;
@@ -46,7 +45,7 @@ footer .title-header {
 }
 
 footer .border-bottom {
-  border-bottom: 1px solid rgba(255,255,255, .4) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, .4) !important;
 }
 
 .text-sm {
@@ -59,16 +58,16 @@ footer .border-bottom {
 }
 
 .text-normal {
-  line-height: 1;
+  line-height: 18px;
 }
 
 .bg-footer {
-  background: #57AE00;
+  background: #57ae00;
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: .5rem 0;
 }
 

@@ -1,28 +1,32 @@
-HTML CSS JSResult Skip Results Iframe
-EDIT ON
 .select {
   position: relative;
   display: block;
   min-width: 220px;
   width: 100%;
-  max-width: 400px;
-  margin-bottom: 20px;
+  //max-width: 400px;
+  margin-bottom: 10px;
+
+  @include sm {
+    margin-bottom: 0;
+
+  }
+
+
 }
 
-.select__head {
+.select-head {
   width: 100%;
   max-width: 100%;
   background: $white;
   height: calc(1.5em + .75rem + 2px);
   padding: .375rem 1.75rem .375rem .75rem;
-  border: 1px solid #CBCBCB;
-  //box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.16);
+  border: 1px solid #cbcbcb;
   border-radius: 4px;
   cursor: pointer;
   color: #495057;
 }
 
-.select__head::after {
+.select-head::after {
   width: 12px;
   height: 8px;
   background: url("/img/up.svg") no-repeat center / cover;
@@ -35,36 +39,36 @@ EDIT ON
   transition: .2s ease-in;
 }
 
-.select__head.open::after {
+.select-head.open::after {
   transform: translateY(-50%) rotate(-180deg);
 }
 
-.select__list {
+.select-list {
   display: none;
   position: absolute;
   top: 100%;
-  left: 15px;
+  //left: 15px;
   right: 0;
   background: $white;
-  border: 1px solid #CBCBCB;
+  border: 1px solid #cbcbcb;
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
   z-index: 1;
-  width: calc(100% - 30px);
+  width: 100%;
 }
 
-.select__list::-webkit-scrollbar {
+.select-list::-webkit-scrollbar {
   width: 7px;
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   padding: 5px;
 }
 
-.select__list::-webkit-scrollbar-thumb {
+.select-list::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
-.select__list .select__item {
+.select-list .select-item {
   position: relative;
   font-family: Rubik;
   font-style: normal;
@@ -73,18 +77,17 @@ EDIT ON
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #6FCF0F;
+  color: #6fcf0f;
   padding: .5rem 1rem;
   cursor: pointer;
   list-style-type: none;
 }
 
-.select__list .select__item.active-item {
-  color: #32484D;
-  background: #F4F8F9;
+.select-list .select-item.active-item {
+  color: #32484d;
+  background: #f4f8f9;
 }
 
-
-.select__list .select__item:hover {
+.select-list .select-item:hover {
   background-color: rgba(224, 229, 231, 0.5);
 }
