@@ -13,7 +13,7 @@ $(function () {
 
                 if (getattr == getvalue) {
 
-                    $(value).fadeIn(400)
+                    $(value).fadeIn(100)
 
                 } else {
 

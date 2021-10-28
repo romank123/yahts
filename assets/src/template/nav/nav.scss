@@ -29,6 +29,15 @@ button[aria-expanded="false"] .navbar-toggler-icon {
   width: 18px;
 }
 
+.dropdown-menu {
+  border: 0px solid rgba(0,0,0,.15);
+  border-radius: 0;
+
+  @include lg {
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+  }
+}
 
 
 
@@ -41,11 +50,22 @@ button[aria-expanded="false"] .navbar-toggler-icon {
 
 .mobile_button {
   transition: .3s;
+  margin-left: 25px;
+  margin-top: 1rem;
+  margin-bottom: 60px;
+  min-width: 234px;
+  @include lg {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .mobile_button:hover {
   border: 1px solid #afff5f;
   color: $white;
+
+
 }
 
 .dropdown-menu {
@@ -79,7 +99,7 @@ a.dropdown-toggle {
   background: url('/img/down.svg');
   border: 0;
   transform: translate(0, -50%) rotate(180deg);
-  transition: transform .4s;
+  transition: transform .1s;
 }
 
 .dropdown-toggle.active::after {

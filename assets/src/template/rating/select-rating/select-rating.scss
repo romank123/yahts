@@ -3,14 +3,12 @@
   display: block;
   min-width: 220px;
   width: 100%;
-  //max-width: 400px;
   margin-bottom: 10px;
 
   @include sm {
     margin-bottom: 0;
 
   }
-
 
 }
 
@@ -23,7 +21,7 @@
   border: 1px solid #cbcbcb;
   border-radius: 4px;
   cursor: pointer;
-  color: #495057;
+  color: #212529;
 }
 
 .select-head::after {
@@ -31,12 +29,12 @@
   height: 8px;
   background: url("/img/up.svg") no-repeat center / cover;
   position: absolute;
-  right: 2rem;
+  right: 1rem;
   top: 50%;
   transform: translateY(-50%) rotate(0deg);
   content: '';
   display: block;
-  transition: .2s ease-in;
+  transition: .1s ease-in;
 }
 
 .select-head.open::after {
@@ -84,7 +82,7 @@
 }
 
 .select-list .select-item.active-item {
-  color: #32484d;
+  color: #212529;
   background: #f4f8f9;
 }
 

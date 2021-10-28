@@ -56,11 +56,11 @@
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #849ea4;
+    color: #212529;
   }
 
   .form-group input::placeholder {
-    color: #849ea4;
+    color: #212529;
   }
 
   .form-group textarea {
@@ -200,6 +200,7 @@ label {
   padding: 6px 12px;
   resize: none;
   background-color: transparent;
+  color: $black;
   /* When set background-color: transparent - Firefox  displays
   unpleasant textarea border. Set border style to fix it.*/
   //border: 1px solid #a5a5a5;
@@ -218,7 +219,7 @@ label {
   position: absolute;
   top: 0;
   padding: 6px 13px;
-  color: #849ea4;
+  color: #212529;
 }
 
 .textarea-block {
@@ -229,7 +230,7 @@ label {
   padding-top: 1rem;
   font-size: 12px;
   line-height: 20px;
-  color: #849ea4;
+  color: $black;
 }
 
 button[type="submit"] {
@@ -338,7 +339,7 @@ button[type="submit"] {
     line-height: 28px;
     margin-bottom: 1rem;
 
-    @include xl{
+    @include xl {
       margin-bottom: 2rem;
     }
   }
@@ -404,3 +405,15 @@ button[type="submit"] {
 .modal_div_rating ul li a:hover {
   text-decoration: none;
 }
+
+.modal-content {
+  border: 0px;
+  border-radius: 0;
+}
+
+.modal_div .form-group input,
+.modal_div .form-group input::placeholder
+{
+  color: $black;
+}
+
