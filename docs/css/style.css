@@ -479,8 +479,7 @@ table tr th:nth-of-type(2) {
   color: #4D4D4D; }
 .text-all-good {
   color: #6fcf0f; }
-/* h2 */
-h2 {
+.heading {
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
