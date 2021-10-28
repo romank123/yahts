@@ -393,7 +393,7 @@ a.rating-link:hover {
   height: 8px;
   background: url("/rating/img/up.svg") no-repeat center/cover;
   position: absolute;
-  right: 2rem;
+  right: 1rem;
   top: 50%;
   transform: translateY(-50%) rotate(0deg);
   content: '';
