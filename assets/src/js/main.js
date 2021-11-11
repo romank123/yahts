@@ -16,3 +16,4 @@
 //= header.js
 //= modal.js
 //= table.js
+// = ajax.js
