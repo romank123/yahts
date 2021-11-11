@@ -19,7 +19,7 @@
 
 ## Результаты:
 
-- <a href="https://romank123.github.io/rating/" target="_blank">внутренняя страница 404</a>
+- <a href="https://romank123.github.io/rating/404" target="_blank">внутренняя страница 404</a>
 - <a href="https://romank123.github.io/rating/oferta" target="_blank">внутренняя страница оферта</a>
 - Кастомный input с применением jQuery
 - кроссбраузерность: IE10+, Chrome, Firefox, Opera 
