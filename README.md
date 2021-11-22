@@ -7,7 +7,7 @@
 </h1>
 
 <strong><em>`Задача:`</em></strong> создать минимальное приложение для медитации на нативном js<br>
-<strong><em>`Демо:`</em></strong> <a href="https://romank123.github.io/rating/404" target="_blank"> romank123.github.io/rating/</a>
+<strong><em>`Демо:`</em></strong> <a href="https://romank123.github.io/rating/" target="_blank"> romank123.github.io/rating/</a>
 
 ## Технологии:
 
