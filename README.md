@@ -23,6 +23,7 @@
 - <a href="https://romank123.github.io/yahts/tours-2.html" target="_blank">внутренняя страница туры 2</a>
 - <a href="https://romank123.github.io/yahts/yahts.html" target="_blank">внутренняя страница яхты </a>
 - <a href="https://romank123.github.io/yahts/motor-yahts.html" target="_blank">внутренняя страница яхты 2</a>
+- <a href="https://romank123.github.io/yahts/about.html" target="_blank">внутренняя страница о нас</a>
 - Кастомные поле input с применением jQuery
 - кроссбраузерность: IE10+, Chrome, Firefox, Opera 
 - сайт адаптирован под современные браузеры и мобильные устройства
