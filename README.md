@@ -6,7 +6,7 @@
     Верстка многостраничного сайта с тематикой аренда яхт
 </h1>
 
-<strong><em>`Задача:`</em></strong> создать многостраничный сайт по ttx заказчика<br>
+<strong><em>`Задача:`</em></strong> создать многостраничный сайт по макету PSD заказчика<br>
 <strong><em>`Демо:`</em></strong> <a href="https://romank123.github.io/yahts/" target="_blank"> romank123.github.io/yahts/</a>
 
 ## Технологии:
@@ -19,8 +19,10 @@
 
 ## Результаты:
 
-- <a href="https://romank123.github.io/yahts/" target="_blank">внутренняя страница</a>
-- <a href="https://romank123.github.io/yahts/" target="_blank">внутренняя страница</a>
+- <a href="https://romank123.github.io/yahts/tours.html" target="_blank">внутренняя страница туры</a>
+- <a href="https://romank123.github.io/yahts/tours-2.html" target="_blank">внутренняя страница туры 2</a>
+- <a href="https://romank123.github.io/yahts/yahts.html" target="_blank">внутренняя страница яхты </a>
+- <a href="https://romank123.github.io/yahts/motor-yahts.html" target="_blank">внутренняя страница яхты 2</a>
 - Кастомные поле input с применением jQuery
 - кроссбраузерность: IE10+, Chrome, Firefox, Opera 
 - сайт адаптирован под современные браузеры и мобильные устройства
