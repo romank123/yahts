@@ -15,7 +15,7 @@
 - CSS3
 - Sass/SCSS
 - jQuery
-- Bootstrap 4
+- Bootstrap 5
 
 ## Результаты:
 
