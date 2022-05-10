@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>О нас</title>
+    <link rel="stylesheet" href="libs/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="container-fluid burger-menu header p-0">
+      <div class="menu">
+        <div class="menu__header d-flex align-items-center justify-content-between">
+          <div class="menu__logo"><img src="img/logo.png"></div>
+          <div class="menu__close"><a href="/">Закрыть</a></div>
+        </div>
+        <div class="menu__body">
+          <div class="menu__nav d-sm-none">
+            <ul class="d-flex flex-column justify-content-lg-between justify-content-evenly">
+              <li class="dropdown__mob d-flex flex-column"><a class="active w-100" href="index.html">Главная</a></li>
+              <li class="dropdown__mob d-flex flex-column"><a class="w-100 collapsed" href="#tours" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">Туры</a>
+                <div class="collapse" id="tours">
+                  <div class="dropdown-content-mob__block d-flex flex-column align-items-start justify-content-start"><a class="menu-mob-link d-flex w-100" href="tours.html">Тур 1</a><a class="menu-mob-link d-flex w-100" href="tours-2.html">Тур 2</a><a class="menu-mob-link d-flex w-100" href="#">Тур 3</a></div>
+                </div>
+              </li>
+              <li class="dropdown__mob d-flex flex-column"><a class="w-100 collapsed" href="#yahts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">Яхты</a>
+                <div class="collapse" id="yahts">
+                  <div class="dropdown-content-mob__block d-flex flex-column align-items-start justify-content-start"><a class="menu-mob-link d-flex w-100" href="motor-yahts.html">Моторные яхты</a><a class="menu-mob-link d-flex w-100" href="#">Парусные яхты</a><a class="menu-mob-link d-flex w-100" href="#">VIP яхты</a><a href="#">Катера</a></div>
+                </div>
+              </li>
+              <li class="dropdown__mob d-flex flex-column"><a class="active w-100" href="about.html">О нас</a></li>
+            </ul>
+          </div>
+          <div class="menu__rasp">
+            <p class="timing">Расписание морских экскурсий</p>
+            <div class="d-flex justify-content-between"><span class="title-span">Рыбалка</span><span class="subtitle-span">9:00</span></div>
+            <div class="d-flex justify-content-between"><span class="title-span">Аквалоо</span><span class="subtitle-span">12:30 14:00 15:30 17:00</span></div>
+            <div class="d-flex justify-content-between"><span class="title-span">Дагомыс</span><span class="subtitle-span">11:00 12:30 14:00 15:30</span></div>
+            <div class="d-flex justify-content-between"><span class="title-span"></span><span class="subtitle-span">17:00 18:30</span></div>
+            <div class="d-flex justify-content-between"><span class="title-span">На яхте</span><span class="subtitle-span not-active">по наполнению</span></div>
+            <div class="d-flex justify-content-between"><span class="title-span">На катере</span><span class="subtitle-span not-active">по наполнению</span></div>
+          </div>
+        </div>
+        <div class="menu__footer">
+          <form class="d-flex flex-column">
+            <div class="d-flex align-items-center flex-wrap">
+              <input class="list-block__input flex-grow-1" type="text" placeholder="+7 (921) 123-45-67">
+              <button class="list-block__btn">Отправить</button>
+            </div>
+            <p class="terms">Нажимая кнопку отправить, я принимаю&nbsp;<a class="terms-link" href="/">условия передачи информации</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid d-sm-none">
+      <div class="row">
+        <div class="col-12 menu-mob py-2">
+          <div class="row">
+            <div class="col-6"><img src="img/logo-mob.png"></div>
+            <div class="col-6 d-flex justify-content-end align-items-center"><a class="menu-mob-btn" href=""><img src="img/burger-mob.png"></a></div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row bg-grey align-items-center py-2">
+            <div class="col-6"><a href="tel:88001000002"></a>
+              <div class="phone">8 800 100 00 02</div>
+              <div class="time">Без выходных с 09:00 до 18:00</div>
+            </div>
+            <div class="col-6 text-end"><a class="call-btn" href="/"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;Обратный звонок</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid shadow-header">
+      <div class="container header d-none d-sm-block position-relative">
+        <div class="menu-wrapper justify-content-center align-items-center">
+          <div class="left-menu d-none d-sm-block"></div>
+        </div>
+        <div class="row align-items-center justify-content-between justify-content-center">
+          <div class="col-2 px-0"><img src="img/logo.png"></div>
+          <div class="col-5 col-xxl-5 px-0">
+            <nav>
+              <ul class="d-flex justify-content-lg-between justify-content-evenly">
+                <li><a href="index.html">Главная</a></li>
+                <li class="dropdown"><a class="dropbtn" href="tours.html">Туры</a>
+                  <div class="dropdown-content">
+                    <div class="dropdown-content__block"><a href="tours.html">Тур 1</a><a href="tours-2.html">Тур 2</a><a href="#">Тур 3</a></div>
+                  </div>
+                </li>
+                <li class="dropdown"><a class="dropbtn" href="yahts.html">Яхты</a>
+                  <div class="dropdown-content">
+                    <div class="dropdown-content__block"><a href="motor-yahts.html">Моторные яхты</a><a href="#">Парусные яхты</a><a href="#">VIP яхты</a><a href="#">Катера</a></div>
+                  </div>
+                </li>
+                <li><a class="active" href="about.html">О нас</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-5 col-xxl-4 px-0">
+            <div class="row align-items-center justify-content-end mw-100 px-0 mx-0">
+              <div class="col-5 col-xxl-6 px-0"><a href="tel:88001000002">
+                  <div class="phone">8 800 100 00 02</div>
+                  <div class="time">Без выходных с 09:00 до 18:00</div></a></div>
+              <div class="col-7 col-xxl-6 text-end"><a class="calls d-inline-block w-100 text-center" href="/"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;Обратный звонок</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid header-bg-about px-0 d-flex flex-column justify-content-center position-relative about">
+      <div class="menu-wrapper-sm justify-content-center align-items-center">
+        <div class="left-menu d-none d-sm-block"></div>
+      </div><img class="d-sm-none" src="img/bg-header-about.jpg">
+      <div class="container h-100 d-flex position-absolute wrapper-header mx-auto">
+        <div class="row align-items-center main-title d-none d-sm-flex justify-content-center">
+          <div class="col-7 align-items-center text-center">
+            <div class="title">О нас</div>
+            <div class="subtitle">Компания<span>&nbsp;«Яхтгрупп»&nbsp;</span>организует индивидуальные морские прогулки по Чёрному морю из Морского порта Сочи на современных комфортабельных яхтах без посторонних.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-box-mob d-flex align-items-center header-banner d-sm-none">
+      <div class="row">
+        <div class="col-12 title text-start">О нас</div>
+        <div class="col-12">
+          <p class="subtext">Компания<span>&nbsp;«Яхтгрупп»&nbsp;</span>организует индивидуальные морские прогулки по Чёрному морю из Морского порта Сочи на современных комфортабельных яхтах без посторонних.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container service pb-sm-5">
+      <div class="row box-shadow">
+        <div class="col-12 col-sm-6 service__block-info">
+          <p class="service__title">Услуги почасовой аренды<span class="inner">&nbsp;(фрахта)&nbsp;</span>яхт в Сочи</p>
+          <p class="service__subtitle">Компания<span>&nbsp;«Яхтгрупп»&nbsp;</span>очень серьёзно относится к требованиям безопасности Вашего отдыха все катера и яхты проходят своевременное техническое освидетельствование и обладают необходимыми спасательными средствами на борту в соответствии с требованиями действующего законодательства. Все услуги лицензированы и застрахованы.</p>
+          <p class="service__subtitle-add">Современный надёжный флот <br> Аренда яхты от судовладельца <br> Капитаны с опытом</p>
+        </div>
+        <div class="col-6 d-none d-sm-block p-0 service-img"><img src="img/service-block.jpg"></div>
+        <div class="col-12 px-0 d-sm-none">
+          <div class="container-fluid d-flex align-items-center contact-form px-0 mb-0 mb-sm-5">
+            <div class="container">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-sm-5 col-xxl-6">
+                  <h2 class="form-title">Морские прогулки</h2>
+                  <p class="form-subtitle">Выбирайте лучшие яхты, доступные для аренды по всему Сочи. Наше предложение включает специально отобранные яхты, опытные экипажи и самые конкурентоспособные цены.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-xxl-5 px-xxl-0 ps-xxl-5">
+                  <div class="d-block ps-sm-4 ps-lg-0">
+                    <h4 class="form-call-title mb-2 d-none d-sm-block">всегда Поможем с выбором</h4>
+                    <p class="form-call-phone d-none d-sm-block">8 (988) 245 55 55</p>
+                    <form class="form-send">
+                      <div class="d-flex">
+                        <input class="form-call-input flex-grow-1" type="text" placeholder="+7 (921) 123-45-67">
+                        <button class="form__btn-send">Отправить</button>
+                      </div>
+                      <p class="terms">Нажимая кнопку отправить, я принимаю&nbsp;<a class="terms-link" href="/">условия передачи информации</a></p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 p-0 d-sm-block">
+          <div class="map h-100"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1ffb2054c00ddb3280d65b8608990fafbcafde33995938a875a64f48990ebfb8&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe></div>
+        </div>
+        <div class="col-12 col-sm-6 d-sm-block service__block-contact">
+          <p class="service__contact-title">Контактная информация</p>
+          <p class="service__contact-address"><span>Адрес:&nbsp;</span>354000, Россия, Краснодарский край, Сочи, микрорайон Центральный, улица Войкова, 1/1А.</p>
+          <p class="service__contact-inn"><span>ИНН:</span>0123456789</p>
+          <p class="service__contact-workt"><span>Время работы:</span>c 8:00 до 20:00 (без выходных дней)</p>
+          <p class="service__contact-pay"><span>Оплата:</span>наличными, Яндекс.Касса, банковские карты</p>
+          <div class="pay-card d-flex justify-content-evenly align-items-center"><img src="img/visa-mc.png"><img src="img/mir.png"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-none d-sm-block paginate">
+      <div class="row">
+        <div class="col-12"><a href="./">Главная</a>
+          <div class="d-inline-flex px-1">></div><a class="active" href="about.html">О нас</a>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-sm-block">
+      <div class="container-fluid d-flex align-items-center contact-form px-0 mb-0 mb-sm-5">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-sm-5 col-xxl-6">
+              <h2 class="form-title">Морские прогулки</h2>
+              <p class="form-subtitle">Выбирайте лучшие яхты, доступные для аренды по всему Сочи. Наше предложение включает специально отобранные яхты, опытные экипажи и самые конкурентоспособные цены.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-xxl-5 px-xxl-0 ps-xxl-5">
+              <div class="d-block ps-sm-4 ps-lg-0">
+                <h4 class="form-call-title mb-2 d-none d-sm-block">всегда Поможем с выбором</h4>
+                <p class="form-call-phone d-none d-sm-block">8 (988) 245 55 55</p>
+                <form class="form-send">
+                  <div class="d-flex">
+                    <input class="form-call-input flex-grow-1" type="text" placeholder="+7 (921) 123-45-67">
+                    <button class="form__btn-send">Отправить</button>
+                  </div>
+                  <p class="terms">Нажимая кнопку отправить, я принимаю&nbsp;<a class="terms-link" href="/">условия передачи информации</a></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container list-block-about d-none d-sm-block">
+      <div class="row">
+        <div class="col-12">
+          <div class="card h-100 border-0">
+            <h5 class="card-title border-bottom d-none d-sm-block">01.</h5>
+            <div class="card-body"><a class="collapsed" href="#clps1" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                <h4 class="card-title mb-0">Теплоход Дагомыс</h4></a>
+              <p class="card-text collapse" id="clps1">Самая доступная обзорная морская экскурсия в порту Сочи.<span>&nbsp;Цена 700 руб.&nbsp;</span>с человека за 1 час экскурсии, детям скидка 50%. Проводится без купания в открытом море. За время часовой морской прогулки вы успеете  осмотреть город Сочи с моря. Теплоход вмещает 170 человек.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card h-100 border-0">
+            <h5 class="card-title border-bottom d-none d-sm-block">02.</h5>
+            <div class="card-body"><a class="collapsed" href="#clps2" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                <h4 class="card-title mb-0">Теплоход Аквалоо</h4></a>
+              <p class="card-text collapse" id="clps2">Самая доступная обзорная морская экскурсия в порту Сочи. Цена 700 руб. с человека за 1 час экскурсии, детям скидка 50%. Проводится без купания в открытом море. За время часовой морской прогулки вы успеете  осмотреть город Сочи с моря. Теплоход вмещает 170 человек.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card h-100 border-0">
+            <h5 class="card-title border-bottom d-none d-sm-block">03.</h5>
+            <div class="card-body"><a class="collapsed" href="#clps3" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                <h4 class="card-title mb-0">Тур на комете Exspress Line</h4></a>
+              <p class="card-text collapse" id="clps3">Самая доступная обзорная морская экскурсия в порту Сочи. Цена 700 руб. с человека за 1 час экскурсии, детям скидка 50%. Проводится без купания в открытом море. За время часовой морской прогулки вы успеете  осмотреть город Сочи с моря. Теплоход вмещает 170 человек.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card h-100 border-0">
+            <h5 class="card-title border-bottom d-none d-sm-block">04.</h5>
+            <div class="card-body"><a class="collapsed" href="#clps4" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                <h4 class="card-title mb-0">Теплоход Князь Владимир</h4></a>
+              <p class="card-text collapse" id="clps4">Самая доступная обзорная морская экскурсия в порту Сочи. Цена 700 руб. с человека за 1 час экскурсии, детям скидка 50%. Проводится без купания в открытом море. За время часовой морской прогулки вы успеете  осмотреть город Сочи с моря. Теплоход вмещает 170 человек.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0 listpref d-none d-sm-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-lg-3 mb-0">
+            <h2 class="listpref__title text-center">Мы подготовим все нужное для Вас</h2>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-4 px-0">
+            <div class="d-flex flex-column align-items-center">
+              <p class="d-flex justify-content-center align-items-center listprefobj__title">1</p>
+              <p class="listpref__subtitle">Вы сообщаете нам свои пожелания по планируемому отдыху в море.</p>
+            </div>
+          </div>
+          <div class="col-4 px-0">
+            <div class="d-flex flex-column align-items-center">
+              <p class="d-flex justify-content-center align-items-center listprefobj__title">2</p>
+              <p class="listpref__subtitle">Мы предоставляем Вам всю информацию.</p>
+            </div>
+          </div>
+          <div class="col-4 px-0">
+            <div class="d-flex flex-column align-items-center">
+              <p class="d-flex justify-content-center align-items-center listprefobj__title">3</p>
+              <p class="listpref__subtitle">Вы можете быть уверены в безопасности вашего отдыха и стоимости услуг.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container rentform d-none d-sm-block">
+      <div class="row justify-content-center">
+        <div class="col-10 col-lg-9 rentform__wrapper">
+          <div class="row rentform__shadow">
+            <h2 class="mb-4">Арендовать яхту в Сочи</h2>
+            <div class="col-8">
+              <div class="d-flex flex-column">
+                <div class="multipleSelection">
+                  <div class="selectBox" id="showCheckboxes">
+                    <input class="w-100 inputActive" placeholder="Выберите яхту (получите скидку при бронировнии за неделю)">
+                    <div class="overSelect"></div>
+                  </div>
+                  <div id="checkBoxes">
+                    <div class="d-flex align-items-center w-100 position-relative my-2">
+                      <input class="custom-checkbox" type="checkbox" name="field1" value="Яхта Meridian 391" id="first">
+                      <label class="d-flex align-items-center" for="first">Яхта Meridian 391</label>
+                    </div>
+                    <div class="d-flex align-items-center w-100 position-relative my-2">
+                      <input class="custom-checkbox" type="checkbox" name="field1" value="Яхта Majesty 44" id="second">
+                      <label class="d-flex align-items-center" for="second">Яхта Majesty 44</label>
+                    </div>
+                    <div class="d-flex align-items-center w-100 position-relative my-2">
+                      <input class="custom-checkbox" type="checkbox" name="field1" value="Яхта Starfisher 34" id="third">
+                      <label class="d-flex align-items-center" for="third">Яхта Starfisher 34</label>
+                    </div>
+                    <div class="d-flex align-items-center w-100 position-relative my-2">
+                      <input class="custom-checkbox" type="checkbox" name="field1" value="Яхта Carver 57" id="fourth">
+                      <label class="d-flex align-items-center" for="fourth">Яхта Carver 57</label>
+                    </div>
+                    <div class="d-flex align-items-center w-100 position-relative my-2">
+                      <input class="custom-checkbox" type="checkbox" name="field1" value="Яхта Bayern 42 (Ника)" id="fifth">
+                      <label class="d-flex align-items-center" for="fifth">Яхта Bayern 42 (Ника)</label>
+                    </div>
+                    <div class="d-flex align-items-center w-100 position-relative my-2">
+                      <input class="custom-checkbox" type="checkbox" name="field1" value="Катамаран - Ангел" id="six">
+                      <label class="d-flex align-items-center" for="six">Катамаран - Ангел</label>
+                    </div>
+                    <div class="d-flex align-items-center w-100 position-relative my-2">
+                      <input class="custom-checkbox" type="checkbox" name="field1" value="Dufour Atoll 43 (Ариадна)" id="seventh">
+                      <label class="d-flex align-items-center" for="seventh">Dufour Atoll 43 (Ариадна)</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="multipleSelection">
+                  <div class="selectBoxSecond" id="showCheckboxesSecond">
+                    <input class="w-100 inputActiveSecond" placeholder="Например: Морская рыбалка">
+                    <div class="overSelectSecond"></div>
+                  </div>
+                  <div id="checkBoxesSecond">
+                    <div class="d-flex align-items-center w-100 position-relative my-2">
+                      <input class="custom-checkbox" type="checkbox" name="field2" value="Морска рыбалка" id="first1">
+                      <label class="d-flex align-items-center" for="first1">Морска рыбалка</label>
+                    </div>
+                    <div class="d-flex align-items-center w-100 position-relative my-2">
+                      <input class="custom-checkbox" type="checkbox" name="field2" value="Свидание на яхте" id="second1">
+                      <label class="d-flex align-items-center" for="second1">Свидание на яхте</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="select-block d-flex justify-content-between">
+                  <input type="text" placeholder="Ваше имя *">
+                  <input type="text" placeholder="Мобильный телефон *">
+                </div>
+                <textarea placeholder="Сообщение" rows="6"></textarea>
+                <p class="addition">Дополнительные услуги</p>
+                <div class="d-flex align-items-center addition-btn">
+                  <div class="d-flex align-items-center w-100 position-relative my-2 ps-3 py-2 border-1 border-secondary border">
+                    <input class="custom-checkbox" type="checkbox" name="field3" value="Трансфер" id="second3">
+                    <label class="d-flex align-items-center" for="second3">Трансфер</label>
+                  </div>
+                  <div class="d-flex align-items-center w-100 position-relative my-2 ps-3 py-2 border-1 border-secondary border">
+                    <input class="custom-checkbox" type="checkbox" name="field3" value="Кейтеринг" id="second4">
+                    <label class="d-flex align-items-center" for="second4">Кейтеринг</label>
+                  </div>
+                  <div class="d-flex align-items-center w-100 position-relative my-2 ps-3 py-2 border-1 border-secondary border">
+                    <input class="custom-checkbox" type="checkbox" name="field3" value="Фотосессия" id="second5">
+                    <label class="d-flex align-items-center" for="second5">Фотосессия</label>
+                  </div>
+                </div>
+                <form class="d-flex flex-column">
+                  <div class="d-flex align-items-center terms-block justify-content-between">
+                    <p class="terms">Заполняя форму, я принимаю&nbsp;<a class="terms-link" href="/">условия передачи информации</a></p>
+                    <button class="list-block__btn">Отправить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-4">
+              <p class="timing">Расписание морских экскурсий</p>
+              <div class="d-flex justify-content-between"><span class="title-span">Рыбалка</span><span class="subtitle-span">9:00</span></div>
+              <div class="d-flex justify-content-between"><span class="title-span">Аквалоо</span><span class="subtitle-span">12:30 14:00 15:30 17:00</span></div>
+              <div class="d-flex justify-content-between"><span class="title-span">Дагомыс</span><span class="subtitle-span">11:00 12:30 14:00 15:30</span></div>
+              <div class="d-flex justify-content-between"><span class="title-span"></span><span class="subtitle-span">17:00 18:30</span></div>
+              <div class="d-flex justify-content-between"><span class="title-span">На яхте</span><span class="subtitle-span not-active">по наполнению</span></div>
+              <div class="d-flex justify-content-between"><span class="title-span">На катере</span><span class="subtitle-span not-active">по наполнению</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-none d-sm-block">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-2"><img src="img/logo/alfa-logo.png"></div>
+        <div class="col-2"><img src="img/logo/mail-group.png"></div>
+        <div class="col-2"><img src="img/logo/megafon.png"></div>
+        <div class="col-2"><img src="img/logo/microsoft.png"></div>
+        <div class="col-2"><img src="img/logo/mts.png"></div>
+      </div>
+    </div>
+    <div class="container-fluid px-0 footertop-about"></div>
+    <div class="container-fluid footer d-flex align-items-center">
+      <div class="container-xxl">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-sm-4 px-0">
+            <p class="footer__copy">© 2021 Компания «Яхтгруп» г. Сочи</p>
+          </div>
+          <div class="col-6 col-sm-4 px-0 d-flex flex-column text-center d-none d-sm-blockn">
+            <p class="footer__phone">8 800 100 00 02</p>
+            <p class="footer__wtime">Без выходных с 09:00 до 18:00</p>
+          </div>
+          <div class="col-4 px-0 d-none d-sm-block">
+            <div class="social d-flex justify-content-between"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-telegram-plane"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+              <!--img(src="img/social.png")-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="libs/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

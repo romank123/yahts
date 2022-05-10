@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Яхты</title>
+    <link rel="stylesheet" href="libs/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="container-fluid burger-menu header p-0">
+      <div class="menu">
+        <div class="menu__header d-flex align-items-center justify-content-between">
+          <div class="menu__logo"><img src="img/logo.png"></div>
+          <div class="menu__close"><a href="/">Закрыть</a></div>
+        </div>
+        <div class="menu__body">
+          <div class="menu__nav d-sm-none">
+            <ul class="d-flex flex-column justify-content-lg-between justify-content-evenly">
+              <li class="dropdown__mob d-flex flex-column"><a class="active w-100" href="index.html">Главная</a></li>
+              <li class="dropdown__mob d-flex flex-column"><a class="w-100 collapsed" href="#tours" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">Туры</a>
+                <div class="collapse" id="tours">
+                  <div class="dropdown-content-mob__block d-flex flex-column align-items-start justify-content-start"><a class="menu-mob-link d-flex w-100" href="tours.html">Тур 1</a><a class="menu-mob-link d-flex w-100" href="tours-2.html">Тур 2</a><a class="menu-mob-link d-flex w-100" href="#">Тур 3</a></div>
+                </div>
+              </li>
+              <li class="dropdown__mob d-flex flex-column"><a class="w-100 collapsed" href="#yahts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">Яхты</a>
+                <div class="collapse" id="yahts">
+                  <div class="dropdown-content-mob__block d-flex flex-column align-items-start justify-content-start"><a class="menu-mob-link d-flex w-100" href="motor-yahts.html">Моторные яхты</a><a class="menu-mob-link d-flex w-100" href="#">Парусные яхты</a><a class="menu-mob-link d-flex w-100" href="#">VIP яхты</a><a href="#">Катера</a></div>
+                </div>
+              </li>
+              <li class="dropdown__mob d-flex flex-column"><a class="active w-100" href="about.html">О нас</a></li>
+            </ul>
+          </div>
+          <div class="menu__rasp">
+            <p class="timing">Расписание морских экскурсий</p>
+            <div class="d-flex justify-content-between"><span class="title-span">Рыбалка</span><span class="subtitle-span">9:00</span></div>
+            <div class="d-flex justify-content-between"><span class="title-span">Аквалоо</span><span class="subtitle-span">12:30 14:00 15:30 17:00</span></div>
+            <div class="d-flex justify-content-between"><span class="title-span">Дагомыс</span><span class="subtitle-span">11:00 12:30 14:00 15:30</span></div>
+            <div class="d-flex justify-content-between"><span class="title-span"></span><span class="subtitle-span">17:00 18:30</span></div>
+            <div class="d-flex justify-content-between"><span class="title-span">На яхте</span><span class="subtitle-span not-active">по наполнению</span></div>
+            <div class="d-flex justify-content-between"><span class="title-span">На катере</span><span class="subtitle-span not-active">по наполнению</span></div>
+          </div>
+        </div>
+        <div class="menu__footer">
+          <form class="d-flex flex-column">
+            <div class="d-flex align-items-center flex-wrap">
+              <input class="list-block__input flex-grow-1" type="text" placeholder="+7 (921) 123-45-67">
+              <button class="list-block__btn">Отправить</button>
+            </div>
+            <p class="terms">Нажимая кнопку отправить, я принимаю&nbsp;<a class="terms-link" href="/">условия передачи информации</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid d-sm-none">
+      <div class="row">
+        <div class="col-12 menu-mob py-2">
+          <div class="row">
+            <div class="col-6"><img src="img/logo-mob.png"></div>
+            <div class="col-6 d-flex justify-content-end align-items-center"><a class="menu-mob-btn" href=""><img src="img/burger-mob.png"></a></div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row bg-grey align-items-center py-2">
+            <div class="col-6"><a href="tel:88001000002"></a>
+              <div class="phone">8 800 100 00 02</div>
+              <div class="time">Без выходных с 09:00 до 18:00</div>
+            </div>
+            <div class="col-6 text-end"><a class="call-btn" href="/"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;Обратный звонок</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid shadow-header">
+      <div class="container header d-none d-sm-block position-relative">
+        <div class="menu-wrapper justify-content-center align-items-center">
+          <div class="left-menu d-none d-sm-block"></div>
+        </div>
+        <div class="row align-items-center justify-content-between justify-content-center">
+          <div class="col-2 px-0"><img src="img/logo.png"></div>
+          <div class="col-5 col-xxl-5 px-0">
+            <nav>
+              <ul class="d-flex justify-content-lg-between justify-content-evenly">
+                <li><a href="index.html">Главная</a></li>
+                <li class="dropdown"><a class="dropbtn" href="tours.html">Туры</a>
+                  <div class="dropdown-content">
+                    <div class="dropdown-content__block"><a href="tours.html">Тур 1</a><a href="tours-2.html">Тур 2</a><a href="#">Тур 3</a></div>
+                  </div>
+                </li>
+                <li class="dropdown"><a class="active dropbtn" href="yahts.html">Яхты</a>
+                  <div class="dropdown-content">
+                    <div class="dropdown-content__block"><a href="motor-yahts.html">Моторные яхты</a><a href="#">Парусные яхты</a><a href="#">VIP яхты</a><a href="#">Катера</a></div>
+                  </div>
+                </li>
+                <li><a href="about.html">О нас</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-5 col-xxl-4 px-0">
+            <div class="row align-items-center justify-content-end mw-100 px-0 mx-0">
+              <div class="col-5 col-xxl-6 px-0"><a href="tel:88001000002">
+                  <div class="phone">8 800 100 00 02</div>
+                  <div class="time">Без выходных с 09:00 до 18:00</div></a></div>
+              <div class="col-7 col-xxl-6 text-end"><a class="calls d-inline-block w-100 text-center" href="/"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;Обратный звонок</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid header-bg yaht-page px-0 d-flex flex-column justify-content-start position-relative">
+      <div class="menu-wrapper-sm justify-content-center align-items-center">
+        <div class="left-menu d-none d-sm-block"></div>
+      </div><img class="yaht-page" src="img/bg-yahts.jpg">
+      <div class="container h-100 d-flex position-absolute wrapper-header">
+        <div class="row align-items-center main-title d-flex">
+          <div class="col-12 col-sm-6 align-items-center">
+            <p class="title-main d-sm-none">Яхта Elegance 64</p>
+            <div class="subtitle">Яхта<span class="fw-bold">&nbsp;Elegance 64&nbsp;</span>немецкой верфи Drettmann - подчеркивает статус яхт, по аналогии с автомобилями Rolls-Royce.</div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid container text-box d-flex align-items-center justify-content-evenly header-banner position-absolute" id="gotoslider">
+        <div class="title d-none d-sm-block">Яхта Elegance 64</div>
+        <div class="alarm d-none d-sm-block"><img src="img/alarm.png"></div>
+        <div class="rent-yahts-paginate">
+          <div class="container d-none d-sm-block paginate">
+            <div class="row">
+              <div class="col-12"><a href="./">Главная</a>
+                <div class="d-inline-flex pe-1">></div><a href="yahts.html">Аренда Яхт</a>
+                <div class="d-inline-flex pe-1">></div><a href="motor-yahts.html">Моторные яхты</a>
+                <div class="d-inline-flex pe-1">></div><a class="active" href="yahts.html">Яхта Elegance 64</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="subtext">35 000<span>&nbsp;р.(час)</span></p>
+      </div>
+    </div>
+    <div class="container yaht-card">
+      <div class="row">
+        <div class="col-12 col-sm-6 px-sm-0">
+          <div class="swiper swiper-card">
+            <div class="swiper-wrapper"><img class="swiper-slide" src="img/yaht-slider/slide-1.jpg"><img class="swiper-slide" src="img/yaht-slider/slide-1.jpg"><img class="swiper-slide" src="img/yaht-slider/slide-1.jpg"><img class="swiper-slide" src="img/yaht-slider/slide-1.jpg"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="col-12 d-sm-none d-flex justify-content-between title-mob">
+          <div class="title-yaht">Elegance 64</div>
+          <div class="subtitle-yaht">35 000<span>р.(час)</span></div>
+        </div>
+        <div class="col-12 col-sm-6 d-flex flex-column justify-content-between box-ttx">
+          <div class="row box-ttx__title d-flex justify-content-between border-bottom-line py-sm-2 py-xxl-3">
+            <div class="col-12 col-sm-4 pe-0 ps-0 ps-sm-2 d-flex year-build justify-content-between justify-content-sm-start">
+              <p class="card-text title-yaer">Год постройки:&nbsp;&nbsp;&nbsp;</p>
+              <p class="card-text year">2012</p>
+            </div>
+            <div class="col-12 col-sm-4 d-flex justify-content-sm-start type-of justify-content-between px-0 px-sm-2">
+              <p class="card-text title-class">Класс:&nbsp;&nbsp;&nbsp;</p>
+              <p class="card-text class">Моторная</p>
+            </div>
+            <div class="col-12 col-sm-4 px-0 d-flex manufacture justify-content-between justify-content-sm-start">
+              <p class="card-text title-manuf">Верфь:&nbsp;&nbsp;&nbsp;</p>
+              <p class="card-text manuf">Drettmann</p>
+            </div>
+          </div>
+          <div class="row px-0 d-sm-none w-100 mx-auto mt-2">
+            <div class="col-12 px-0">
+              <div class="d-flex align-items-center contact-form">
+                <div class="container">
+                  <div class="row align-items-center justify-content-between">
+                    <div class="col-12 px-0">
+                      <h2 class="form-title">Забронировать</h2>
+                    </div>
+                    <div class="col-12 px-0">
+                      <form class="form-send">
+                        <div class="d-flex">
+                          <input class="form-call-input flex-grow-1" type="text" placeholder="+7 (921) 123-45-67">
+                          <button class="form__btn-send">Отправить</button>
+                        </div>
+                        <p class="terms">Нажимая кнопку отправить, я принимаю <a class="terms-link" href="/">условия передачи информации</a></p>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 px-0">
+              <div class="d-flex justify-content-center payment-mob">
+                <div class="payment d-flex align-items-center"><img class="me-3" src="img/you-ico-white.png"><a href="#">Оплатить</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="row text-descr flex-grow-1 pb-2 pb-sm-0">
+            <div class="col-12 ps-sm-0 pe-sm-0 col-sm-6 border-right d-flex align-items-center pt-3 pt-sm-0">
+              <div class="row">
+                <div class="col-7 pe-0">Длина:</div>
+                <div class="col-5 d-flex justify-content-end justify-content-sm-start">20м</div>
+                <div class="col-7 pe-0">Ширина:</div>
+                <div class="col-5 d-flex justify-content-end justify-content-sm-start">5,6м</div>
+                <div class="col-7 pe-0">Высота борта:</div>
+                <div class="col-5 d-flex justify-content-end justify-content-sm-start">20м</div>
+                <div class="col-7 pe-0">Количество кают:</div>
+                <div class="col-5 d-flex justify-content-end justify-content-sm-start">4ед.</div>
+                <div class="col-7 pe-0">Вместимость:</div>
+                <div class="col-5 d-flex justify-content-end justify-content-sm-start">10 чел.</div>
+                <div class="col-7 pe-0">Спальных мест:</div>
+                <div class="col-5 d-flex justify-content-end justify-content-sm-start">6+2 ед.</div>
+              </div>
+            </div>
+            <div class="col-12 pe-sm-0 ps-sm-4 col-sm-6 d-flex align-items-center box-second">
+              <div class="row">
+                <div class="col-7 pe-0">Двигатель:</div>
+                <div class="col-5 d-flex justify-content-end justify-content-sm-start ps-0">2х1100 л.с.</div>
+                <div class="col-7 pe-0">Генератор 220В:</div>
+                <div class="col-5 d-flex justify-content-end justify-content-sm-start ps-0">18 kW</div>
+                <div class="col-7 pe-0">Скорость:</div>
+                <div class="col-5 d-flex justify-content-end justify-content-sm-start ps-0">11,0 узл.</div>
+                <div class="col-7 pe-0">Запас хода:</div>
+                <div class="col-5 d-flex justify-content-end justify-content-sm-start ps-0">700 миль</div>
+                <div class="col-7 pe-0">Запас воды:</div>
+                <div class="col-5 d-flex justify-content-end justify-content-sm-start ps-0">1450 литр.</div>
+                <div class="col-7 pe-0">Страна:</div>
+                <div class="col-5 d-flex justify-content-end justify-content-sm-start ps-0">Германия.</div>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-sm-block">
+            <div class="col-12 payment-padding">
+              <div class="d-flex justify-content-between align-items-center order-box"><a class="payment d-flex align-items-center" href="#">
+                  <div class="img me-3"></div>
+                  <div class="div">Оплатить</div></a>
+                <form class="order-form d-none d-sm-block">
+                  <input class="order-input" placeholder="+7(921) 123-45-67">
+                  <button class="order-btn">Заказать</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-0 description">
+      <div class="ourwork-tab-wrap">
+        <ul class="nav nav-tabs justify-content-between" id="tabs" role="tablist">
+          <li class="nav-item"><a class="nav-link" href="#pane-A" data-bs-toggle="tab" role="tab" id="tab-A">Описание</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pane-B" data-bs-toggle="tab" role="tab" id="tab-B">Оборудование</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pane-C" data-bs-toggle="tab" role="tab" id="tab-C">Безопасность</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pane-D" data-bs-toggle="tab" role="tab" id="tab-D">Тарифы</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pane-E" data-bs-toggle="tab" role="tab" id="tab-E">Условия</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#pane-F" data-bs-toggle="tab" role="tab" id="tab-F">
+              <!--img(src="img/testi.png")--></a></li>
+        </ul>
+        <div class="tab-content" id="content" role="tablist">
+          <div class="card tab-pane fade" id="pane-A" role="tabpanel" aria-labelledby="tab-A">
+            <div class="card-header" id="heading-A" role="tab">
+              <h5 class="mb-0"><a data-bs-toggle="collapse" href="#collapse-A" aria-expanded="true" aria-controls="collapse-A">Описание<i class="fa fa-plus"></i></a></h5>
+            </div>
+            <div class="collapse show" id="collapse-A" data-parent="#content" role="tabpanel" aria-labelledby="heading-A">
+              <div class="card-body new-card-body">
+                <div class="row container-wrapper">
+                  <div class="col-md-12 px-0">
+                    <p class="text-card">Бывают в жизни такие моменты, когда хочется сделать для любимого человека что-то особенное. Испечь трехэтажный торт, приготовить завтрак в постель. Организовать прыжок с парашютом. Мужчины в таком случае обычно заказывают столик в хорошем ресторане и покупают большой букет роз. Но цветы вскоре завянут, а паста с креветками переварится ещё быстрее. Зато впечатления, которые мы дарим друг другу, остаются с нами навсегда Представьте: открытое море. Вокруг яхты – захватывающий дух простор. Лазурная бесконечность под килем. Лучи заходящего Солнца отражаются в искорках шампанского в фужерах. И никого, чтобы сказать друг другу что-то важное. Романтичные вечерние туры мы устраиваем чаще всего в период с 17.00 до 21.00. Это идеальное время, чтобы увидеть, как садится Солнце, поплавать в прозрачной, озарённой алыми лучами воде, сделать несколько чувственных фотографий и успеть насладиться этим вечером наедине. Все, что вам понадобится, у нас есть: фужеры для шампанского, посуда для фруктов или роллов, пледы для уюта. И все это не дороже традиционного сценария ресторан + цветы + новое платье. 2 часа – 13000 руб., 3 часа – 19500 руб.. Возвращаясь назад, Стоимость тура в период с 01.06 по 14.07 составляет 2 часа – 14000 руб., 3 часа - 19500 руб. В период с 15.07 по 30.08 стоимость составляет 2 часа – 15000 руб., 3 часа – 21000 руб.</p>
+                  </div>
+                  <div class="col-12 px-0 d-none d-sm-block">
+                    <div class="row border-top">
+                      <div class="col-5 d-none d-sm-flex align-items-center">
+                        <p class="text-tour-page">Выходим в море на яхте<span> Cranchi 32</span></p>
+                      </div>
+                      <div class="col-7 d-none d-sm-block">
+                        <div class="d-flex justify-content-end align-items-center order-box">
+                          <div class="payment d-flex align-items-center">
+                            <div class="img me-3"></div><a href="#">Оплатить</a>
+                          </div>
+                          <form class="order-form d-none d-sm-block">
+                            <input class="order-input" placeholder="+7(921) 123-45-67">
+                            <button class="order-btn">Заказать</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card tab-pane fade" id="pane-B" role="tabpanel" aria-labelledby="tab-B">
+            <div class="card-header" id="heading-B" role="tab">
+              <h5 class="mb-0"><a class="collapsed" data-bs-toggle="collapse" href="#collapse-B" aria-expanded="false" aria-controls="collapse-B">Оборудование<i class="fa fa-plus"></i></a></h5>
+            </div>
+            <div class="collapse" id="collapse-B" data-parent="#content" role="tabpanel" aria-labelledby="heading-B">
+              <div class="card-body px-0 px-sm-2">
+                <div class="row container-wrapper__table">
+                  <div class="col-12 col-sm-6 px-0 pe-sm-2 pe-xxl-4">
+                    <table class="table__desk" style="width:100%">
+                      <tbody>
+                        <tr>
+                          <td class="js-get-width">Холодильник</td>
+                          <td>2x120л+1х60л</td>
+                        </tr>
+                        <tr>
+                          <td>Морозильник</td>
+                          <td>2х10л+1х4л</td>
+                        </tr>
+                        <tr>
+                          <td>СВЧ печь</td>
+                          <td>есть</td>
+                        </tr>
+                        <tr>
+                          <td>Плита</td>
+                          <td>есть</td>
+                        </tr>
+                        <tr>
+                          <td>Кондиционер</td>
+                          <td>есть</td>
+                        </tr>
+                        <tr>
+                          <td>Отопление</td>
+                          <td>есть</td>
+                        </tr>
+                        <tr>
+                          <td>Горячая вода</td>
+                          <td>есть</td>
+                        </tr>
+                        <tr>
+                          <td>Лёдогенератор</td>
+                          <td>есть</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-12 col-sm-6 px-0 ps-sm-2 ps-xxl-4">
+                    <table class="table__desk" style="width:100%">
+                      <tbody>
+                        <tr>
+                          <td class="js-set-width">Душ</td>
+                          <td>палуба, гальюн</td>
+                        </tr>
+                        <tr>
+                          <td>Аудио</td>
+                          <td>CD, USB</td>
+                        </tr>
+                        <tr>
+                          <td>Гальюн</td>
+                          <td>2+1 ед.</td>
+                        </tr>
+                        <tr>
+                          <td>Трап</td>
+                          <td>есть</td>
+                        </tr>
+                        <tr>
+                          <td>Посуда</td>
+                          <td>есть</td>
+                        </tr>
+                        <tr>
+                          <td>Пледы</td>
+                          <td>11 ед.</td>
+                        </tr>
+                        <tr>
+                          <td>Удочки</td>
+                          <td>8 ед.</td>
+                        </tr>
+                        <tr>
+                          <td>Полотенца</td>
+                          <td>есть</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card tab-pane fade" id="pane-C" role="tabpanel" aria-labelledby="tab-C">
+            <div class="card-header" id="heading-C" role="tab">
+              <h5 class="mb-0"><a class="collapsed" data-bs-toggle="collapse" href="#collapse-C" aria-expanded="false" aria-controls="collapse-C">Безопасность<i class="fa fa-plus"></i></a></h5>
+            </div>
+            <div class="collapse" id="collapse-C" role="tabpanel" data-parent="#content" aria-labelledby="heading-C">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2>Безопасность</h2>
+                    <p>Безопасность</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card tab-pane fade" id="pane-D" role="tabpanel" aria-labelledby="tab-D">
+            <div class="card-header" id="heading-D" role="tab">
+              <h5 class="mb-0"><a class="collapsed" data-bs-toggle="collapse" href="#collapse-D" aria-expanded="false" aria-controls="collapse-D">Тарифы<i class="fa fa-plus"></i></a></h5>
+            </div>
+            <div class="collapse" id="collapse-D" role="tabpanel" data-parent="#content" aria-labelledby="heading-D">
+              <div class="card-body px-0 px-sm-2">
+                <div class="row container-wrapper__table">
+                  <div class="col-12 col-sm-6 px-0 pe-sm-2 pe-xxl-4">
+                    <table class="table__desk" style="width:100%">
+                      <tbody>
+                        <tr>
+                          <td class="js-get-width-tariff">15.07 - 30.08</td>
+                          <td>40000 руб./час</td>
+                        </tr>
+                        <tr>
+                          <td>День (12 часов)</td>
+                          <td>Лучшая цена</td>
+                        </tr>
+                        <tr>
+                          <td>Сутки</td>
+                          <td>Лучшая цена</td>
+                        </tr>
+                        <tr>
+                          <td>Мин. время</td>
+                          <td>2 часа</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-12 col-sm-6 px-0 ps-sm-2 ps-xxl-4">
+                    <table class="table__desk" style="width:100%; opacity:0">
+                      <tbody>
+                        <tr>
+                          <td class="js-set-width-tariff">01.03 - 30.05</td>
+                          <td>37000 руб./час</td>
+                        </tr>
+                        <tr>
+                          <td>01.06 - 14.07</td>
+                          <td>39000 руб./час</td>
+                        </tr>
+                        <tr>
+                          <td>31.12 - 10.01</td>
+                          <td>40000 руб./час</td>
+                        </tr>
+                        <tr>
+                          <td>01.10-28.02</td>
+                          <td>32000 руб./час</td>
+                        </tr>
+                        <tr>
+                          <td>01.09 - 30.09</td>
+                          <td>39000 руб./час</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card tab-pane fade" id="pane-E" role="tabpanel" aria-labelledby="tab-E">
+            <div class="card-header" id="heading-E" role="tab">
+              <h5 class="mb-0"><a class="collapsed" data-bs-toggle="collapse" href="#collapse-E" aria-expanded="false" aria-controls="collapse-E">Условия<i class="fa fa-plus"></i></a></h5>
+            </div>
+            <div class="collapse" id="collapse-E" role="tabpanel" data-parent="#content" aria-labelledby="heading-E">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2>Условия</h2>
+                    <p>Условия</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card tab-pane fade show active" id="pane-F" role="tabpanel" aria-labelledby="tab-F">
+            <div class="card-header" id="heading-F" role="tab">
+              <h5 class="mb-0"><a class="collapsed" data-bs-toggle="collapse" href="#collapse-F" aria-expanded="false" aria-controls="collapse-F">Отзывы<i class="fa fa-plus"></i></a></h5>
+            </div>
+            <div class="collapse show" id="collapse-F" role="tabpanel" data-parent="#content" aria-labelledby="heading-F">
+              <div class="card-body px-0">
+                <div class="row bg-grey py-sm-2 py-xxl-3 g-0 container-wrapper d-none d-sm-flex">
+                  <div class="col-md-12 d-flex justify-content-between">
+                    <div class="d-flex">
+                      <div class="name d-flex"><span>Александр</span></div>
+                      <div class="start ps-3 pe-2"><i class="fas fa-star fa-xxl-lg"></i></div>
+                      <div class="num">5</div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="name d-flex"><span>Сервис</span></div>
+                      <div class="start ps-3 pe-2"><i class="fas fa-star fa-xxl-lg"></i></div>
+                      <div class="num">5</div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="name d-flex"><span>Комфорт</span></div>
+                      <div class="start ps-3 pe-2"><i class="fas fa-star fa-xxl-lg"></i></div>
+                      <div class="num">5</div>
+                    </div>
+                    <div class="time-tes">2021-07-02 14:31</div>
+                  </div>
+                </div>
+                <div class="row container-wrapper">
+                  <div class="col-12 mx-auto px-0">
+                    <p class="desc">Яхта Elegance 64 немецкой верфи Drettmann. Штучная сборка яхт на верфи Drettmann - подчеркивает статус яхт, по	аналогии с автомобилями Rolls-Royce. В России всего две яхты этой верфи, одна из них находится в Сочи. Двухпалубная круизная яхта с высоким бортом и большим флайбриджем идеально подходит тем, кто кривык к лучшему, и для длительных комфортных путешествий по Черноморскому побережью, например, в Крым или Геленджик.</p>
+                  </div>
+                </div>
+                <div class="row container-wrapper">
+                  <div class="col-12 px-0 pb-4">
+                    <form class="row">
+                      <div class="col-12 col-sm-6 d-flex flex-column">
+                        <div class="d-flex flex-column flex-sm-row">
+                          <input class="w-100 w-sm-50 my-4 my-sm-0" placeholder="Ваше имя*">
+                          <input class="w-100 w-sm-50" placeholder="Мобильный телефон*">
+                        </div>
+                        <textarea class="w-100 flex-grow-1 mb-4 mb-sm-0" placeholder="Сообщение"></textarea>
+                      </div>
+                      <div class="col-sm-1"></div>
+                      <div class="col-12 col-sm-3">
+                        <div class="raiting">Рейтинг</div>
+                        <div class="service-star my-3">
+                          <div class="d-flex justify-content-between align-items-center"><span>Сервис</span>
+                            <div class="service-star"><i class="fas fa-star fa-xxl-lg"></i><i class="fas fa-star fa-xxl-lg"></i><i class="fas fa-star fa-xxl-lg"></i><i class="fas fa-star fa-xxl-lg"></i><i class="fas fa-star fa-xxl-lg"></i></div>
+                          </div>
+                        </div>
+                        <div class="comfort-star mt-3">
+                          <div class="d-flex justify-content-between align-items-center"><span>Комфорт</span>
+                            <div class="service-star"><i class="fas fa-star fa-xxl-lg"></i><i class="fas fa-star fa-xxl-lg"></i><i class="fas fa-star fa-xxl-lg"></i><i class="fas fa-star fa-xxl-lg"></i><i class="fas fa-star fa-xxl-lg"></i></div>
+                          </div>
+                        </div>
+                        <button class="btn-send__feed mt-4 mt-sm-3">Отправить</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-xxl-0 catalog recomend">
+      <div class="row">
+        <div class="col-12">
+          <p class="recomend-title">Рекомендуем</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-3 row-cols-xxl-4 g-2 g-xxl-3 mt-6">
+        <div class="swiper swiper-recomend">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="col mb-5 mb-sm-1">
+                <div class="card h-100 border-0"><img class="card-img-top" src="img/slider/slide-1.jpg" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="card-title">8500&nbsp<span>₽/Час</span></h5><span class="testimonial d-sm-none">Отзывы (5)</span>
+                    </div>
+                    <h4 class="card-title">YACHT 2000 TOM CRUISE</h4><span class="testimonial d-none d-sm-block">Отзывы (5)</span>
+                    <div class="d-flex justify-content-between">
+                      <div class="card-info d-flex flex-column">
+                        <p class="card-text year">2000</p>
+                        <p class="card-text type">Моторная</p>
+                      </div>
+                      <div class="card-info d-flex flex-column">
+                        <p class="card-text length">Длинна 7,48 м</p>
+                        <p class="card-text amount">50 мест</p>
+                      </div>
+                    </div>
+                  </div><a class="more">
+                    <div class="card-footer">ПОДРОБНЕЕ</div></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col mb-5 mb-sm-1">
+                <div class="card h-100 border-0"><img class="card-img-top" src="img/slider/slide-2.jpg" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="card-title">88500&nbsp<span>₽/Час</span></h5><span class="testimonial d-sm-none">Отзывы (15)</span>
+                    </div>
+                    <h4 class="card-title">BOAT 1992 ALISON</h4><span class="testimonial d-none d-sm-block">Отзывы (15)</span>
+                    <div class="d-flex justify-content-between">
+                      <div class="card-info d-flex flex-column">
+                        <p class="card-text year">2012</p>
+                        <p class="card-text type">Моторная</p>
+                      </div>
+                      <div class="card-info d-flex flex-column">
+                        <p class="card-text length">Длинна 7,48 м</p>
+                        <p class="card-text amount">50 мест</p>
+                      </div>
+                    </div>
+                  </div><a class="more">
+                    <div class="card-footer">ПОДРОБНЕЕ</div></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col mb-5 mb-sm-1">
+                <div class="card h-100 border-0"><img class="card-img-top" src="img/slider/slide-1.jpg" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="card-title">8500&nbsp<span>₽/Час</span></h5><span class="testimonial d-sm-none">Отзывы (5)</span>
+                    </div>
+                    <h4 class="card-title">YACHT 2000 TOM CRUISE</h4><span class="testimonial d-none d-sm-block">Отзывы (5)</span>
+                    <div class="d-flex justify-content-between">
+                      <div class="card-info d-flex flex-column">
+                        <p class="card-text year">2000</p>
+                        <p class="card-text type">Моторная</p>
+                      </div>
+                      <div class="card-info d-flex flex-column">
+                        <p class="card-text length">Длинна 7,48 м</p>
+                        <p class="card-text amount">50 мест</p>
+                      </div>
+                    </div>
+                  </div><a class="more">
+                    <div class="card-footer">ПОДРОБНЕЕ</div></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col mb-5 mb-sm-1">
+                <div class="card h-100 border-0"><img class="card-img-top" src="img/slider/slide-2.jpg" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="card-title">88500&nbsp<span>₽/Час</span></h5><span class="testimonial d-sm-none">Отзывы (5)</span>
+                    </div>
+                    <h4 class="card-title">BOAT 1992 ALISON</h4><span class="testimonial d-none d-sm-block">Отзывы (5)</span>
+                    <div class="d-flex justify-content-between">
+                      <div class="card-info d-flex flex-column">
+                        <p class="card-text year">2012</p>
+                        <p class="card-text type">Моторная</p>
+                      </div>
+                      <div class="card-info d-flex flex-column">
+                        <p class="card-text length">Длинна 7,48 м</p>
+                        <p class="card-text amount">50 мест</p>
+                      </div>
+                    </div>
+                  </div><a class="more">
+                    <div class="card-footer">ПОДРОБНЕЕ</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container consult d-none d-sm-block">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-12 px-0">
+          <h2 class="form-title">Нужна консультация?</h2>
+        </div>
+        <div class="col-8 col-xxl-4 px-0">
+          <form class="form-send">
+            <div class="d-flex">
+              <input class="form-call-input flex-grow-1" type="text" placeholder="+7 (921) 123-45-67">
+              <button class="form__btn-send">Отправить</button>
+            </div>
+            <p class="terms">Нажимая кнопку отправить, я принимаю <a class="terms-link" href="/">условия передачи информации</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0 footertop"></div>
+    <div class="container-fluid footer d-flex align-items-center">
+      <div class="container-xxl">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-12 col-sm-4 px-0">
+            <p class="footer__copy">© 2021 Компания «Яхтгруп» г. Сочи</p>
+          </div>
+          <div class="col-6 col-sm-4 px-0 d-flex flex-column text-center d-none d-sm-blockn">
+            <p class="footer__phone">8 800 100 00 02</p>
+            <p class="footer__wtime">Без выходных с 09:00 до 18:00</p>
+          </div>
+          <div class="col-4 px-0 d-none d-sm-block">
+            <div class="social d-flex justify-content-between"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-telegram-plane"></i></a><a href="#"><i class="fab fa-instagram"></i></a>
+              <!--img(src="img/social.png")-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="libs/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
